@@ -1,0 +1,52 @@
+<section><!--Inicio de Seccion Proyectos-->
+
+    <div class="container-flui text-center"><!--Inicio Contenedor proyectos-->
+      
+        <div class="row p-3"><!--Inicio titulo Proyectos-->
+          <div class="col-xs-12 col-md-6 col-lg-11">
+                               
+              <h1 class="titulo1">{{miPorfolio.tituproye}}</h1>
+                            
+          </div>
+    
+          <div class="col-xs-12 col-md-6 col-lg-1">
+                               
+              <ul class="list-group list-group-horizontal">
+    
+                <div class="btn-edit m-3"><a href="#" class="btn-ringt"><i class="fa fa-pen" type="button" 
+                data-bs-toggle="modal" data-bs-target="#tituproye"></i></a></div>
+    
+                <div class="btn-edit m-3"><a href="#" class="btn-ringt"><i class="fa-solid fa-x"></i></a></div>
+               
+              </ul>
+                            
+          </div>
+        </div><!--fin titulo proyectos-->
+      
+        <div class="row p-3"><!--Inicio Primer proyecto-->
+          <div class="col-xs-12 col-md-6 col-lg-4 text-center" *ngFor="let proyectito of proyectoList"><!--Inicio primera columna Primer proyecto-->
+                                
+            <div class="card" style="width: 18rem;">
+              <img [src]="proyectito.logoproye" class="card-img-top" alt="Proyectos Jorge Lesme">
+              <div class="card-body">
+                <h5 class="card-title">{{proyectito.nomproye}}</h5>
+                <p class="card-text">{{proyectito.descriproye}}</p>
+                <a href="#" class="btn btn-primary">{{proyectito.urlproye}}</a>
+              </div>
+            </div>
+    
+            <ul class="list-group list-group-horizontal uticla">
+    
+              <div class="btn-edit m-3"><a href="#" class="btn-ringt"><i class="fa fa-pen" type="button" 
+                data-bs-toggle="modal" data-bs-target="#infoproye1"></i></a></div>
+    
+              <div class="btn-edit m-3"><a href="#" class="btn-ringt"><i class="fa-solid fa-x"></i></a></div>
+             
+            </ul>
+                      
+          </div><!--Fin primera columna Primer Estudio-->
+    
+        </div>
+    </div><!--Fin Contenedor Experiencia Laboral-->
+  
+    </section> <!--Fin Sección proyectos-->
